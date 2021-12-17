@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+/*----------------------------------------top pagina met background img------------------------------------*/
+.banner {
+    width: 99%;
+    height: 100vh; /* 100% viewheight -  */
+    background-image: url("assets/background_new.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size: 100%;*/
+    background-size: cover;
+    max-width: 100%;
+    position: center;
+    object-fit: contain;
+    overflow: auto;
+    margin: 10px;
+    /*border: 5px solid purple;*/
+}
+/*-----------------------------------navigatiebalk------------------------------------*/
+.navigatie { /*--box--*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /*border: 2px solid purple;*/
+}
+.navigatie a { /*--items--*/
+    margin: 25px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #272727;
+    font-weight: bold;
+    font-size: 20px;
+}
+a:hover {
+    font-size: 30px;
+}
+/*------------------------------banner tekst----------------------------*/
+
+.banner-tekst  {/*--box--*/
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: justify;
+    /*border: 2px solid red;*/
+}
+.banner h2 {/*--tekst--*/
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 6rem;
+    color: #2f4f4f;
+    text-align: left;
+    padding-left: 150px;
+}
+
+/*------------------------------------------ titelbalk (tekst rechts) -------------------------------------*/
+div.balk_titel_rechts {/*--box nummer en titeltekst--*/
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    text-align: justify;
+    display: flex;
+    justify-content: flex-end;
+    /*border: 5px solid yellow;*/
+}
+
+div.nummer01 { /*--box nummer--*/
+    color: #cccccc;
+    z-index: 2;
+    /*border: 2px solid red;*/
+}
+div.nummer01 p { /*--nummer--*/
+    font-size: 6.5rem;
+    padding: 0;
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: bold;
+}
+div.titel01 { /*--box tekst--*/
+    color: #cccccc;
+    margin-right: 10%;
+    /*border: 2px solid orange;*/
+}
+div.titel01 h1 { /*--tekst--*/
+    font-size: 30px;
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: bold;
+    padding: 10px 0;
+}
+/*--------------------------pagina's met artikel links en afbeelding rechts ------------------------------*/
+
+div.box,.box2  {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 5%;
+    background: #fff;
+   /* border: 4px solid red;*/
+}
+
+div.item {
+    width: 50%;
+    height: 400px;
+    padding: 5px;
+    background-color: #fff;
+    /*border: 2px solid purple;*/
+}
+div.item h1 {
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 5vh;
+    font-weight: bold;
+}
+div.item p {
+    margin: 10% 10% 10% 0;
+
+}
+
+div.item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+img.img_2 {
+    width: 49%;
+}
+img.img_3 {
+    max-height: 23%;
+}
+
+/*------------------------------------------ titelbalk (tekst links) -------------------------------------*/
+div.balk_titel_links { /*--box nummer en titeltekst--*/
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    text-align: justify;
+    display: flex;
+    justify-content: flex-start;
+    /*border: 5px solid yellow;*/
+}
+
+div.nummer02 { /*--box nummer --*/
+    color: #cccccc;
+    margin-left: 10%;
+    z-index: 2;
+    /*border: 2px solid red;*/
+}
+div.nummer02 p { /*--nummer--*/
+    font-size: 6.5rem;
+    padding: 0;
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: bold;
+}
+div.titel02 { /*--box tekst--*/
+    color: #cccccc;
+    /*border: 2px solid orange;*/
+}
+div.titel02 h1 { /*--tekst--*/
+    font-size: 30px;
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/*------------------------------------------ footerbalk  -------------------------------------*/
+div.balk_footer {/*--footerbalk - flexbox--*/
+    background-color: grey;
+    width: 100%;
+    height: 70px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    /*border: 5px solid yellow;*/
+}
+img.arrow { /*--footerbalk-item(icon)-*/
+    width: 50%;
+    margin: 7.5px;
+}
+
+
+/*------------------------------ sectiepagina - tattooing --------------------------*/
+div.tattoo_box { /* --flexbox met 4 items met daarin telkens een img-- */
+    display: flex;
+   /*padding: 5% 5%;*/
+    /*border: 4px solid red;*/
+}
+div.tattoo_art { /* items */
+    width: 25%;
+    padding: 5px;
+    /*border: 2px solid purple;*/
+}
+
+div.tattoo_art img { /*afbeeldingen*/
+    width: 100%;
+}
+/*----------- artikel tattooing ------------*/
+div.tattoo_title { /*--box--*/
+    width: 100%;
+    height: 25%;
+    padding: 5% 5%;
+}
+div.tattoo_title h1 { /*--titeltekst--*/
+    /*padding-top: 65px;*/
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 5vh;
+}
+div.tattoo_title p { /*--tekst--*/
+    /*padding: 15px 10px;*/
+    margin: 20px 0;
+}
+video {
+    width: 80%;
+    height: auto;
+}
+hr {
+    margin: 0 10%;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------MEDIA QUERY-----------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+    /*-------------------------------------top pagina met background img--------------------------*/
+    .banner {
+        background-image: url("assets/background_ipad.png");
+    }
+
+    .navigatie { /*--flexbox--*/
+        justify-content: center;
+    }
+
+    .navigatie a { /*--items--*/
+        font-size: 20px;
+    }
+
+    /*--------------------banner tekst-------------------*/
+    .banner-tekst { /*--box--*/
+    }
+    .banner h2 { /*--tekst--*/
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    /*---------------------------------------titelbalk (tekst rechts)-------------------------------------*/
+    div.balk_titel_rechts { /*--box met nummer en titeltekst--*/
+
+    }
+
+    /*--------------------------titelbalk (tekst links)---------------------------------*/
+    div.nummer02 { /*--box nummer--*/
+        z-index: 2;
+    }
+}
+@media screen and (max-width: 600px) {
+    div.box {
+        flex-direction: column;
+        padding: 5% 5%;
+        background: #fff;
+    }
+    div.box2 {
+        flex-direction: column-reverse;
+    }
+    div.tattoo_box {
+        flex-direction: column;
+    }
+    div.tattoo_art { /* items */
+        width: 100%;
+        padding: 5px;
+    }
+    div.item {
+       width: 100%;
+       height: auto;
+       padding: 5px;
+       background-color: #fff;
+       border: 2px solid purple;
+        margin-top: 25px;
+     }
+div.item h1 {
+    font-family: "Helvetica Neue",sans-serif;
+    font-size: 5vh;
+    font-weight: bold;
+}
+div.item p {
+    margin: 10% 10% 10% 0;
+
+}
+
+div.item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+img.img_2 {
+    width: 49%;
+}
+img.img_3 {
+    max-height: 23%;
+}
+}
+
+

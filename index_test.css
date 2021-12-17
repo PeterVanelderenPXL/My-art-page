@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+body {
+    /*background-image: url("assets/background2.png");>
+    background-size: 5%;*/
+    /*width: 100%;
+    alignment: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-attachment: fixed;*/
+}
+main {
+    width: 90%;
+    height: 1080px;
+    border: 2px solid red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/*-------backrgound img----------*/
+main div.bg-image {
+    border: 2px solid purple;
+    background-image: url("assets/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topnav {
+    /*border: 2px solid red;*/
+    margin-top: 10px;
+}
+div.topnav a {
+    margin-left: 100px;
+    font-size: 15pt;
+    color: black;
+}
+/*div.hero */img {
+    width: 100%;
+    position: relative;
+    top: -400px;
+}
+/*----positie van 3 woorden------*/
+div.Tagline {
+    position: relative;
+    top: 60px;
+    left: 120px;
+   /* border: 2px solid red;*/
+    width: 40%;
+}
+
+.hyperrealism {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    color: white;
+    font-size: 30pt;
+}
+.anamorphosis {
+    position: relative;
+    top: 15px;
+    left: 35px;
+    font-size: 20pt;
+    color: dimgrey;
+}
+.illustration {
+    position: relative;
+    top: 0;
+    left: 28px;
+    font-size: 25pt;
+    color: black;
+}
+
+main article section.intro {
+    position: relative;
+    border: 2px solid red;
+    width: 50%;
+    top: 100px;
+    left: 50px;
+}
+article section.intro h1, p {
+    position: relative;
+    top: 10px;
+    margin: 20px;
+}
+/*
+.ik1 img {
+    width: 20%;
+    position: absolute;
+    background-position: center;
+    top: 800px;
+    left: 5px;
+}*/
+figure {
+    border: 2px solid black;
+    float: left;
+}
+figure img {
+
+}
+
+
