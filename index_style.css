@@ -11,13 +11,10 @@
     background-image: url("assets/background_new.png");
     background-repeat: no-repeat;
     background-position: center;
-    /*background-size: 100%;*/
     background-size: cover;
     max-width: 100%;
-    position: center;
     object-fit: contain;
     overflow: auto;
-    /*margin: 10px;*/
     /*border: 5px solid purple;*/
 }
 /*-----------------------------------navigatiebalk------------------------------------*/
@@ -51,7 +48,7 @@ a:hover {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     font-size: 6rem;
-    color: #2f4f4f;
+    color: black/*#2f4f4f*/;
     text-align: left;
     padding-left: 150px;
 }
@@ -69,8 +66,9 @@ div.balk_titel_rechts {/*--box nummer en titeltekst--*/
 }
 
 div.nummer01 { /*--box nummer--*/
-    color: #cccccc;
+    color: #e3e1e1;
     z-index: 2;
+    padding: 10px;
     /*border: 2px solid red;*/
 }
 div.nummer01 p { /*--nummer--*/
@@ -78,6 +76,7 @@ div.nummer01 p { /*--nummer--*/
     padding: 0;
     font-family: "Helvetica Neue",sans-serif;
     font-weight: bold;
+    color: #e3e1e1;
 }
 div.titel01 { /*--box tekst--*/
     color: #cccccc;
@@ -88,7 +87,7 @@ div.titel01 h1 { /*--tekst--*/
     font-size: 30px;
     font-family: "Helvetica Neue",sans-serif;
     font-weight: bold;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 /*--------------------------pagina's met artikel links en afbeelding rechts ------------------------------*/
 
@@ -125,10 +124,10 @@ div.item {
    /* border: 2px solid purple;*/
 }
 div.item_illustration {
-    width: 50%;
-    height: 400px;
+    width: 60%;
+    height: 600px;
     padding: 5px;
-    margin-left: 20%;
+    margin-left: 5%;
     /*background-color: #fff;*/
     /* border: 2px solid purple;*/
 }
@@ -150,6 +149,7 @@ div.item p {
 div.item img {
     max-width: 100%;
     max-height: 100%;
+    border: 5px solid #ffffff;
 }
 img.img_2 {
     width: 49%;
@@ -157,9 +157,7 @@ img.img_2 {
 img.img_3 {
     max-height: 23%;
 }
-.item img {
-    border: 5px solid #ffffff;
-}
+
 
 /*------------------------------------------ titelbalk (tekst links) -------------------------------------*/
 div.balk_titel_links { /*--box nummer en titeltekst--*/
@@ -174,16 +172,17 @@ div.balk_titel_links { /*--box nummer en titeltekst--*/
 }
 
 div.nummer02 { /*--box nummer --*/
-    color: #cccccc;
     margin-left: 10%;
     z-index: 2;
     /*border: 2px solid red;*/
 }
 div.nummer02 p { /*--nummer--*/
     font-size: 6.5rem;
-    padding: 0;
+    padding-right: 10px;
     font-family: "Helvetica Neue",sans-serif;
     font-weight: bold;
+    padding-top: 10px;
+    color: #e3e1e1;
 }
 div.titel02 { /*--box tekst--*/
     color: #cccccc;
@@ -193,7 +192,7 @@ div.titel02 h1 { /*--tekst--*/
     font-size: 30px;
     font-family: "Helvetica Neue",sans-serif;
     font-weight: bold;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 /*------------------------------------------ footerbalk  -------------------------------------*/
@@ -208,7 +207,7 @@ div.balk_footer {/*--footerbalk - flexbox--*/
 }
 img.arrow { /*--footerbalk-item(icon)-*/
     width: 50%;
-    margin: 7.5px;
+    /*margin: 7.5px;*/
 }
 
 
@@ -283,51 +282,38 @@ hr {
     div.nummer02 { /*--box nummer--*/
         z-index: 2;
     }
-}
-@media screen and (max-width: 600px) {
-    div.box {
-        flex-direction: column;
-        padding: 5% 5%;
-        background: #fff;
-    }
-    div.box2 {
-        flex-direction: column-reverse;
-    }
-    div.tattoo_box {
-        flex-direction: column;
-    }
-    div.tattoo_art { /* items */
-        width: 100%;
+    div.item_illustration {
+        height: 500px;
         padding: 5px;
+        margin-left: 5%;
+        width: 100%;
     }
     div.item {
        width: 100%;
        height: auto;
        padding: 5px;
-       background-color: #fff;
-       border: 2px solid purple;
         margin-top: 25px;
      }
-div.item h1 {
+    div.item h1 {
     font-family: "Helvetica Neue",sans-serif;
     font-size: 5vh;
     font-weight: bold;
-}
-div.item p {
+     }
+    div.item p {
     margin: 10% 10% 10% 0;
 
-}
+     }
 
-div.item img {
+    div.item img {
     max-width: 100%;
     max-height: 100%;
-}
-img.img_2 {
+     }
+    img.img_2 {
     width: 49%;
-}
-img.img_3 {
+     }
+    img.img_3 {
     max-height: 23%;
-}
+     }
 }
 
 
